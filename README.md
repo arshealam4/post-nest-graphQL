@@ -36,9 +36,9 @@
 
 
 ## Quick Start
-* go inside app
+* git clone https://github.com/arshealam4/post-nest-graphQL.git
+* cd post-nest-graphQL
 * npm install
-* cp .env.example .env
 * npm run start:dev
 
 
