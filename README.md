@@ -41,6 +41,46 @@
 * npm install
 * npm run start:dev
 
+## graphQL playground
+
+* after running server open url in any browser (http://localhost:3050/graphql)
+### queries and mutation e.g.
+* get all post with pagination and mention return fields
+
+```json
+{
+  posts(params: {
+    pageNo:1
+    limit: 10
+  }) {title, id}
+}
+```
+
+
+* get post by id and mention return fields
+
+```json
+{
+  postById(id: "60618842d6ca5f6ea3605d05") {title}
+}
+```
+
+* add post and mention return fields
+```json
+mutation {
+  addPost(postData: {
+    title: "test"
+    description: "test test"
+  }) {title}
+}
+```
+
+* delete post and mention return fields
+```json
+mutation {
+  deletePost(id: "60618842d6ca5f6ea3605d05") {title}
+}
+```
 
 ## Run Test
 * npm run test:e2e
