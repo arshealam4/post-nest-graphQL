@@ -47,7 +47,7 @@
 ### queries and mutation e.g.
 * get all post with pagination and mention return fields
 
-```json
+```js
 {
   posts(params: {
     pageNo:1
@@ -59,14 +59,14 @@
 
 * get post by id and mention return fields
 
-```json
+```js
 {
   postById(id: "60618842d6ca5f6ea3605d05") {title}
 }
 ```
 
 * add post and mention return fields
-```json
+```js
 mutation {
   addPost(postData: {
     title: "test"
@@ -76,7 +76,7 @@ mutation {
 ```
 
 * delete post and mention return fields
-```json
+```js
 mutation {
   deletePost(id: "60618842d6ca5f6ea3605d05") {title}
 }
